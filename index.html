@@ -41,11 +41,14 @@
 
     }
     
+      var posY=2;
+      
       function changePosition(myID)
     {
     
     var myShape= document.getElementById(myID);
-    myShape.setAttribute('position', {x:1, y:2, z:-3});
+    myShape.setAttribute('position', {x:1, y:posY, z:-3});
+    posY++;
 
     }
     
