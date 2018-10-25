@@ -41,6 +41,13 @@
 
     }
     
+      function changePosition(myID)
+    {
+    
+    var myShape= document.getElementById(myID);
+    myShape.setAttribute('position', {x:1, y:2, z:-3});
+
+    }
     
     
   </script>
@@ -69,7 +76,7 @@
       
       <a-torus id="disappear" visible="true" onclick="makeInvisible(this);" color="#43A367" arc="270" radius="5" radius-tubular="0.1" position="-1 1 -5"  ></a-torus>
       
-      <a-text onclick="disappear('obj1'); disappear('obj2'); " value="Click me!" scale="1.5 1.5 2" align="center" position= "1 -1 -2"    geometry="primitive:plane"></a-text>
+      <a-text onclick="changePosition('obj1'); disappear('obj2'); " value="Click me!" scale="1.5 1.5 2" align="center" position= "1 -1 -2"    geometry="primitive:plane"></a-text>
 
 <a-text id="myText" 
 scale="2 2 2" 
